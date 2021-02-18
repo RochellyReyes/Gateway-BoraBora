@@ -1,0 +1,276 @@
+body, html {
+    background: #ccefff;
+    height: 100%;
+    margin: 0px;
+  }
+  
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/0c/f7/c8/exterior.jpg");
+  
+    height: 60%;
+  
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 65px;
+  
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #cfe0e8;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  nav li a:hover:not(.active) {
+    background-color: #b7d7e8;
+  }
+  
+  nav .active {
+    background-color: #87bdd8;
+  }
+  
+  .logo {
+    margin-left: 10px;
+    margin-right:20px;
+  }
+  
+  .logo img {
+    border-radius: 50%;
+  }
+  
+  .about {
+    border: 1px hidden;
+    margin: 50px 200px;
+    background-color: lightblue;
+    padding: 50px 80px;
+    font-size: 18px;
+  }
+  
+  .iframe {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .iframe__state {
+    display: none;
+  }
+  
+  .actstate {
+    border: 1px hidden;
+    margin: 50px 200px;
+    background-color: lightblue;
+    padding: 30px 50px;
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;  
+    justify-content: space-evenly;
+    align-content: stretch;
+  }
+  
+  .cards > div {
+    background-color: #87bdd8;
+    width: 400px;
+    margin: 50px 30px;
+    text-align: center;
+    align-self: center;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 20px 20px;
+  
+  }
+  
+  .cards a {
+    color: black;
+    background-color: #cfe0e8;
+    text-decoration: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .cards a:hover {
+    color: white;
+    background-color: #708090;
+  }
+  
+  #rest {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://mocah.org/uploads/posts/5411666-cloud-feathers-white-soft-fluffy-blurry-ethereal-texture-background-light-dreamy-macro-feather-close-public-domain-images.jpg");
+    
+    height: auto; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 20px;
+  
+  }
+  
+  #rest a {
+    color: black;
+    background-color: #cfe0e8;
+    text-decoration: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #rest a:hover {
+    color: white;
+    background-color: #708090;
+  }
+  
+  .contactus {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.20)), url("https://upload.wikimedia.org/wikipedia/commons/2/2a/Bora_Bora_ISS006.jpg");
+  
+    height: auto;
+  
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 75px 75px;
+  }
+  
+  .contactus > div { 
+    background-color: #87bdd8;
+    width: 400px;
+    margin: 50px 30px;
+    text-align: center;
+    align-self: center;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 20px 20px; 
+  }
+  
+  #public {
+    font-size: 14px;
+    line-height: 10px;
+  }
+  
+  #comment-container {
+    background-color: #cfe0e8;  
+  }
+  
+  .thankyou  {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: space-evenly;
+    align-content: stretch;
+    margin-top: 75px;
+  }
+  
+  footer {
+     flex: 1;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     padding: 15px 0;
+     margin-top: 75px;
+     background-color: #cfe0e8;
+     color: black;
+     flex-direction: row;
+     font-size: 18px; 
+  }
+  
+  
+  footer .logo img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  
+  footer .copyright {
+    margin-left: 10px;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  .social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social i {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-size: 30px;
+  }
+  
+  
+  @media screen and (max-width: 780px) {
+    nav .logo {
+      display: none;
+    }
+    
+    nav li a {
+      font-size: 18px;
+    }
+    
+    .about {
+      margin: 50px 50px;
+      padding: 30px 40px;
+    }
+    
+    .actstate {
+      margin: 50px 40px;
+      font-size: 16px;
+    }
+    
+    .contactus {
+      margin: 0px;
+    }
+    
+    .googlemap iframe {
+      width: 350px;
+      height: 350px;
+    }
+    
+    .thankyou img {
+      width: 350px;
+    
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
